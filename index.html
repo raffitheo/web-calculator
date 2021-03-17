@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="author" content="Raffaele Valenti" />
+        <meta name="description" content="A simple neumorphism calculator written in HTML, CSS and javaScript." />
+        <meta name="keywords" content="calculator gh html javascript neumorphsim node pages raffaele scss valenti website" />
+        <meta name="theme-color" content="#DDE1E7" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Web Calculator</title>
+
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+    </head>
+
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+
+        <header>
+            <h1>Web Calculator</h1>
+        </header>
+
+        <div class="calculator">
+            <form action="#" name="form">
+                <div class="result">
+                    <input type="text" name="display" id="display">
+                </div>
+
+                <div class="buttons">
+                    <div class="row">
+                        <input type="button" value="7" name="v7" onclick="val(v7.value)">
+                        <input type="button" value="8" name="v8" onclick="val(v8.value)">
+                        <input type="button" value="9" name="v9" onclick="val(v9.value)">
+                        <input type="button" value="+" name="vadd" onclick="val(vadd.value)">
+                        <input type="button" value="(" name="vobk" onclick="val(vobk.value)">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="4" name="v4" onclick="val(v4.value)">
+                        <input type="button" value="5" name="v5" onclick="val(v5.value)">
+                        <input type="button" value="6" name="v6" onclick="val(v6.value)">
+                        <input type="button" value="-" name="vsub" onclick="val(vsub.value)">
+                        <input type="button" value=")" name="vcbk" onclick="val(vcbk.value)">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="1" name="v1" onclick="val(v1.value)">
+                        <input type="button" value="2" name="v2" onclick="val(v2.value)">
+                        <input type="button" value="3" name="v3" onclick="val(v3.value)">
+                        <input type="button" value="*" name="vmul" onclick="val(vmul.value)">
+                        <input type="button" value="&larr;" name="vbck" onclick="removeLast()">
+                    </div>
+                    <div class="row">
+                        <input type="button" value="0" name="v0" onclick="val(v0.value)">
+                        <input type="button" value="." name="vdot" onclick="val(vdot.value)">
+                        <input type="button" value=":" name="vdiv" onclick="val('/')">
+                        <input type="button" value="=" name="veql" onclick="calculate()">
+                        <input type="button" value="C" name="vclr" onclick="clearDisplay()">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>
+                Copyright &copy; 2021 Raffaele Valenti.
+                <br />
+                <span>This website useses an ISC license. You can see the source code on the <a href="https://github.com/raffitheo/web-calculator">GitHub page</a>.</span>
+            </p>
+        </footer>
+
+        <script src="js/calculator.js"></script>
+    </body>
+</html>
