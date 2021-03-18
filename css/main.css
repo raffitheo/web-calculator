@@ -70,12 +70,11 @@ form .buttons {
     outline: none;
     width: 56px;
 }
-.buttons input[type="button"]:focus, .buttons input[type="button"]:hover {
+.buttons input[type="button"]:focus {
     box-shadow: inset -3px -3px 7px #FFFFFF73, inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+    color: #3498DB;
     transform: scale(0.9);
 }
-.buttons input[type="button"]:focus { color: #DB3434; }
-.buttons input[type="button"]:hover { color: #3498DB; }
 
 footer {
     bottom: 0;

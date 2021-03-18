@@ -1,6 +1,6 @@
 calculate = () => {
     if (form.display.value == '') alert('There is no equation to calculate!');
-    else form.display.value = eval(form.display.value);
+    else form.display.value = eval(form.display.value.replace(':', '/').replace('x', '*'));
 }
 
 clearDisplay = () => { form.display.value = ''; }

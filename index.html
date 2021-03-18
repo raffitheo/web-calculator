@@ -48,13 +48,13 @@
                         <input type="button" value="1" name="v1" onclick="val(v1.value)">
                         <input type="button" value="2" name="v2" onclick="val(v2.value)">
                         <input type="button" value="3" name="v3" onclick="val(v3.value)">
-                        <input type="button" value="*" name="vmul" onclick="val(vmul.value)">
+                        <input type="button" value="x" name="vmul" onclick="val(vmul.value)">
                         <input type="button" value="&larr;" name="vbck" onclick="removeLast()">
                     </div>
                     <div class="row">
                         <input type="button" value="0" name="v0" onclick="val(v0.value)">
                         <input type="button" value="." name="vdot" onclick="val(vdot.value)">
-                        <input type="button" value=":" name="vdiv" onclick="val('/')">
+                        <input type="button" value=":" name="vdiv" onclick="val(vdiv.value)">
                         <input type="button" value="=" name="veql" onclick="calculate()">
                         <input type="button" value="C" name="vclr" onclick="clearDisplay()">
                     </div>
@@ -64,6 +64,8 @@
 
         <footer>
             <p>
+                <span>Version: 1.1.1</span>
+                <br />
                 Copyright &copy; 2021 Raffaele Valenti.
                 <br />
                 <span>This website useses an ISC license. You can see the source code on the <a href="https://github.com/raffitheo/web-calculator">GitHub page</a>.</span>
